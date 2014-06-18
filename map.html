@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+/* CSS goes here. */
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script>
+
+var width = 960,
+    height = 1160;
+
+var projection = d3.geo.mercator()
+    .scale(1000)
+    .translate([width / 2 - 200, 700 + height / 2]);
+
+var path = d3.geo.path()
+    .projection(projection);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+d3.json("poland_border_coarse.topo.json", function(error, data) {
+  svg.append("path")
+      .datum(topojson.feature(data, data.objects.poland_border_coarse))
+      .attr("d", path)
+      .style("fill", "steelblue");
+
+  bb = projection([19, 49.8]);
+
+  svg.append("circle")
+    .attr("cx", bb[0])
+    .attr("cy", bb[1])
+    .attr("r", 2)
+    .style("fill", "red");
+
+});
+
+
+
+</script>
