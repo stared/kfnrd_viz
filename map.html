@@ -24,20 +24,23 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-d3.json("poland_border_coarse.topo.json", function(error, data) {
-  svg.append("path")
-      .datum(topojson.feature(data, data.objects.poland_border_coarse))
-      .attr("d", path)
-      .style("fill", "steelblue");
+d3.json("poland_border_coarse.topo.json", function(error_poland, poland) {
+  d3.csv("demografia2005.csv", function(error_dem, data) {
+    svg.append("path")
+        .datum(topojson.feature(poland, poland.objects.poland_border_coarse))
+        .attr("d", path)
+        .style("fill", "steelblue");
 
-  bb = projection([19, 49.8]);
-
-  svg.append("circle")
-    .attr("cx", bb[0])
-    .attr("cy", bb[1])
-    .attr("r", 2)
-    .style("fill", "red");
-
+    svg.selectAll('.city')
+      .data(data)
+      .enter()
+        .append("circle")
+        .attr("cx", function (d) { return projection([+d.lng, +d.lat])[0]; })
+        .attr("cy", function (d) { return projection([+d.lng, +d.lat])[1]; })
+        .attr("r", 2)
+        .style("opacity", 0.1)
+        .style("fill", "red");
+  })
 });
 
 
