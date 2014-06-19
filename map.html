@@ -29,7 +29,7 @@ var width = 960,
 var projection = d3.geo.mercator()
     .center([20, 52])
     .scale(3000)
-    .translate([width / 2, height / 2]);
+    .translate([400, 350]);
 
 var path = d3.geo.path()
     .projection(projection);
@@ -63,6 +63,29 @@ var ludzie_do_miast = function (ludzie) {
   });
 }
 
+var ludzie_do_dziedzin = function (ludzie) {
+  var dict = {};
+  var d;
+  for (var i = 0; i < ludzie.length; i++) {
+    d = ludzie[i];
+    dziedzina = d.dziedzina;
+    if (dziedzina in dict) {
+      dict[dziedzina].osoby += 1;
+    } else {
+      dict[dziedzina] = {osoby: 1};
+    }
+  }
+  var res = [];
+  for (var k in dict) {
+    d = dict[k];
+    res.push({dziedzina: k, osoby: d.osoby})
+  };
+  return res.sort(function (a, b) {
+    return b.osoby - a.osoby;
+  });
+}
+
+
 d3.json("poland_border_coarse.topo.json", function(error_poland, poland) {
   d3.csv("demografia2005.csv", function(error_dem, data) {
 
@@ -87,7 +110,19 @@ d3.json("poland_border_coarse.topo.json", function(error_poland, poland) {
     miasta.transition()
       .duration(1000)
         .attr("r", function (d) { return 3 * Math.sqrt(d.osoby); });
-        
+
+    var dziedziny = svg.selectAll('.dziedzina')
+      .data(ludzie_do_dziedzin(data));
+
+    dziedziny.enter()
+      .append("text")
+        .attr("class", "dziedzina")
+        .attr("x", 700)
+        .attr("y", function (d, i) { return 100 + 20 * i; })
+        .text(function (d) {
+          return [d.osoby, d.dziedzina].join(" ");
+        });
+
   })
 });
 
