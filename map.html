@@ -85,6 +85,20 @@ var ludzie_do_dziedzin = function (ludzie) {
   });
 }
 
+var ludzie_do_dziedzin_dict = function (ludzie) {
+  var dict = {};
+  var d;
+  for (var i = 0; i < ludzie.length; i++) {
+    d = ludzie[i];
+    dziedzina = d.dziedzina;
+    if (dziedzina in dict) {
+      dict[dziedzina] += 1;
+    } else {
+      dict[dziedzina] = 1;
+    }
+  }
+  return dict;
+}
 
 d3.json("poland_border_coarse.topo.json", function(error_poland, poland) {
   d3.csv("demografia2005.csv", function(error_dem, data) {
@@ -104,6 +118,28 @@ d3.json("poland_border_coarse.topo.json", function(error_poland, poland) {
         .attr("cx", function (d) { return projection([d.lng, d.lat])[0]; })
         .attr("cy", function (d) { return projection([d.lng, d.lat])[1]; })
         .attr("r", 0)
+        .on("mouseover", function (d) {
+          var z_miasta = data.filter(function (c) {
+            return c.miejscowosc + ", woj. " + c.wojewodztwo == d.miasto_woj;
+          });
+          var dziedziny_w_miescie = ludzie_do_dziedzin_dict(z_miasta);
+          svg.selectAll('.dziedzina')
+            .data(ludzie_do_dziedzin(data))
+              .style("opacity", function (d) {
+                return dziedziny_w_miescie[d.dziedzina] ? 1 : 0.3;
+              })
+              .text(function (d) {
+                return [dziedziny_w_miescie[d.dziedzina] || "", d.dziedzina].join(" ");
+              });
+        })
+        .on("mouseout", function (d) {
+          svg.selectAll('.dziedzina')
+            .data(ludzie_do_dziedzin(data))
+              .style("opacity", 1)
+              .text(function (d) {
+                return [d.osoby, d.dziedzina].join(" ");
+            });
+        })
         .append("title")
           .text(function (d) { return d.miasto_woj; });
 
