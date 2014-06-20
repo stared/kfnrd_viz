@@ -100,68 +100,70 @@ var ludzie_do_dziedzin_dict = function (ludzie) {
   return dict;
 }
 
-d3.json("poland_border_coarse.topo.json", function(error_poland, poland) {
-  d3.csv("demografia2005.csv", function(error_dem, data) {
-
-    svg.append("path")
-        .datum(topojson.feature(poland, poland.objects.poland_border_coarse))
-        .attr("d", path)
-        .attr("class", "poland")
-        .style("fill", "steelblue");
-
-    var miasta = svg.selectAll('.city')
-      .data(ludzie_do_miast(data));
-
-    miasta.enter()
-      .append("circle")
-        .attr("class", "city")
-        .attr("cx", function (d) { return projection([d.lng, d.lat])[0]; })
-        .attr("cy", function (d) { return projection([d.lng, d.lat])[1]; })
-        .attr("r", 0)
-        .on("mouseover", function (d) {
-          var z_miasta = data.filter(function (c) {
-            return c.miejscowosc + ", woj. " + c.wojewodztwo == d.miasto_woj;
-          });
-          var dziedziny_w_miescie = ludzie_do_dziedzin_dict(z_miasta);
-          svg.selectAll('.dziedzina')
-            .data(ludzie_do_dziedzin(data))
-              .style("opacity", function (d) {
-                return dziedziny_w_miescie[d.dziedzina] ? 1 : 0.3;
-              })
-              .text(function (d) {
-                return [dziedziny_w_miescie[d.dziedzina] || "", d.dziedzina].join(" ");
-              });
-        })
-        .on("mouseout", function (d) {
-          svg.selectAll('.dziedzina')
-            .data(ludzie_do_dziedzin(data))
-              .style("opacity", 1)
-              .text(function (d) {
-                return [d.osoby, d.dziedzina].join(" ");
-            });
-        })
-        .append("title")
-          .text(function (d) { return d.miasto_woj; });
-
-    miasta.transition()
-      .duration(1000)
-        .attr("r", function (d) { return 3 * Math.sqrt(d.osoby); });
-
-    var dziedziny = svg.selectAll('.dziedzina')
-      .data(ludzie_do_dziedzin(data));
-
-    dziedziny.enter()
-      .append("text")
-        .attr("class", "dziedzina")
-        .attr("x", 700)
-        .attr("y", function (d, i) { return 100 + 20 * i; })
-        .text(function (d) {
-          return [d.osoby, d.dziedzina].join(" ");
-        });
-
+d3.json("poland_border_coarse.topo.json", function(error_poland, poland_data) {
+  d3.csv("demografia2005.csv", function(error_dem, people_data) {
+    init_viz(poland_data, people_data);
   })
 });
 
 
+function init_viz (poland_data, people_data) {
+
+  svg.append("path")
+      .datum(topojson.feature(poland_data, poland_data.objects.poland_border_coarse))
+      .attr("d", path)
+      .attr("class", "poland")
+      .style("fill", "steelblue");
+
+  var miasta = svg.selectAll('.city')
+    .data(ludzie_do_miast(people_data));
+
+  miasta.enter()
+    .append("circle")
+      .attr("class", "city")
+      .attr("cx", function (d) { return projection([d.lng, d.lat])[0]; })
+      .attr("cy", function (d) { return projection([d.lng, d.lat])[1]; })
+      .attr("r", 0)
+      .on("mouseover", function (d) {
+        var z_miasta = people_data.filter(function (c) {
+          return c.miejscowosc + ", woj. " + c.wojewodztwo == d.miasto_woj;
+        });
+        var dziedziny_w_miescie = ludzie_do_dziedzin_dict(z_miasta);
+        svg.selectAll('.dziedzina')
+          .data(ludzie_do_dziedzin(people_data))
+            .style("opacity", function (d) {
+              return dziedziny_w_miescie[d.dziedzina] ? 1 : 0.3;
+            })
+            .text(function (d) {
+              return [dziedziny_w_miescie[d.dziedzina] || "", d.dziedzina].join(" ");
+            });
+      })
+      .on("mouseout", function (d) {
+        svg.selectAll('.dziedzina')
+          .data(ludzie_do_dziedzin(people_data))
+            .style("opacity", 1)
+            .text(function (d) {
+              return [d.osoby, d.dziedzina].join(" ");
+          });
+      })
+      .append("title")
+        .text(function (d) { return d.miasto_woj; });
+
+  miasta.transition()
+    .duration(1000)
+      .attr("r", function (d) { return 3 * Math.sqrt(d.osoby); });
+
+  var dziedziny = svg.selectAll('.dziedzina')
+    .data(ludzie_do_dziedzin(people_data));
+
+  dziedziny.enter()
+    .append("text")
+      .attr("class", "dziedzina")
+      .attr("x", 700)
+      .attr("y", function (d, i) { return 100 + 20 * i; })
+      .text(function (d) {
+        return [d.osoby, d.dziedzina].join(" ");
+      });
+}
 
 </script>
