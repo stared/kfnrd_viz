@@ -51,7 +51,7 @@ var svg = d3.select("body").append("svg")
     .attr("height", height);
 
 
-var CZAS_PRZEJSCIA = 500;
+var CZAS_PRZEJSCIA = 400;
 
 
 function miejsce_id (d) {
@@ -199,7 +199,7 @@ function odswiez_rok (people_data, rok) {
 
 function wyswietl_dziedziny_wszystkie (dziedziny) {
 
-  dziedziny
+  dziedziny.transition().duration(CZAS_PRZEJSCIA)
     .style("opacity", 1)
     .text(function (d) {
       return [d.osoby, d.dziedzina].join(" ");
@@ -214,9 +214,9 @@ function wyswietl_dziedziny_w_miescie (dziedziny, people_data, d) {
 
   var dziedziny_w_miescie = ludzie_do_dziedzin_zliczenia(czesc_ludzi);
 
-  dziedziny
+  dziedziny.transition().duration(CZAS_PRZEJSCIA)
     .style("opacity", function (d) {
-      return dziedziny_w_miescie[d.dziedzina] ? 1 : 0.3;
+      return dziedziny_w_miescie[d.dziedzina] ? 1 : 0.4;
     })
     .text(function (d) {
       return [dziedziny_w_miescie[d.dziedzina] || "", d.dziedzina].join(" ");
