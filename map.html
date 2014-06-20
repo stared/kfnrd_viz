@@ -23,6 +23,7 @@
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script>
 
+
 var width = 960,
     height = 1160;
 
@@ -37,6 +38,12 @@ var path = d3.geo.path()
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
+
+
+function miejsce_id (d) {
+  return d.miejscowosc + ", woj. " + d.wojewodztwo;
+}
+
 
 var ludzie_do_miast = function (ludzie) {
   var dict = {};
@@ -63,6 +70,7 @@ var ludzie_do_miast = function (ludzie) {
   });
 }
 
+
 var ludzie_do_dziedzin = function (ludzie) {
   var dict = {};
   var d;
@@ -85,6 +93,7 @@ var ludzie_do_dziedzin = function (ludzie) {
   });
 }
 
+
 var ludzie_do_dziedzin_dict = function (ludzie) {
   var dict = {};
   var d;
@@ -100,20 +109,28 @@ var ludzie_do_dziedzin_dict = function (ludzie) {
   return dict;
 }
 
+
 d3.json("poland_border_coarse.topo.json", function(error_poland, poland_data) {
   d3.csv("demografia2005.csv", function(error_dem, people_data) {
-    init_viz(poland_data, people_data);
+    zacznij_wizualizajce(poland_data, people_data);
   })
 });
 
 
-function init_viz (poland_data, people_data) {
+function zacznij_wizualizajce (poland_data, people_data) {
 
   svg.append("path")
       .datum(topojson.feature(poland_data, poland_data.objects.poland_border_coarse))
       .attr("d", path)
       .attr("class", "poland")
       .style("fill", "steelblue");
+
+  odswiez_rok(people_data, 2005);
+
+}
+
+
+function odswiez_rok (people_data, rok) {
 
   var miasta = svg.selectAll('.city')
     .data(ludzie_do_miast(people_data));
@@ -124,28 +141,8 @@ function init_viz (poland_data, people_data) {
       .attr("cx", function (d) { return projection([d.lng, d.lat])[0]; })
       .attr("cy", function (d) { return projection([d.lng, d.lat])[1]; })
       .attr("r", 0)
-      .on("mouseover", function (d) {
-        var z_miasta = people_data.filter(function (c) {
-          return c.miejscowosc + ", woj. " + c.wojewodztwo == d.miasto_woj;
-        });
-        var dziedziny_w_miescie = ludzie_do_dziedzin_dict(z_miasta);
-        svg.selectAll('.dziedzina')
-          .data(ludzie_do_dziedzin(people_data))
-            .style("opacity", function (d) {
-              return dziedziny_w_miescie[d.dziedzina] ? 1 : 0.3;
-            })
-            .text(function (d) {
-              return [dziedziny_w_miescie[d.dziedzina] || "", d.dziedzina].join(" ");
-            });
-      })
-      .on("mouseout", function (d) {
-        svg.selectAll('.dziedzina')
-          .data(ludzie_do_dziedzin(people_data))
-            .style("opacity", 1)
-            .text(function (d) {
-              return [d.osoby, d.dziedzina].join(" ");
-          });
-      })
+      .on("mouseover", function (d) { wyswietl_dziedziny_w_miejsce(dziedziny, people_data, d); })
+      .on("mouseout", function (d) { wyswietl_dziedziny_wszystkie(dziedziny); })
       .append("title")
         .text(function (d) { return d.miasto_woj; });
 
@@ -160,10 +157,37 @@ function init_viz (poland_data, people_data) {
     .append("text")
       .attr("class", "dziedzina")
       .attr("x", 700)
-      .attr("y", function (d, i) { return 100 + 20 * i; })
-      .text(function (d) {
-        return [d.osoby, d.dziedzina].join(" ");
-      });
+      .attr("y", function (d, i) { return 100 + 20 * i; });
+
+  wyswietl_dziedziny_wszystkie(dziedziny);
+
 }
+
+
+function wyswietl_dziedziny_wszystkie (dziedziny) {
+
+  dziedziny
+    .style("opacity", 1)
+    .text(function (d) {
+      return [d.osoby, d.dziedzina].join(" ");
+    });
+}
+
+
+function wyswietl_dziedziny_w_miejsce (dziedziny, people_data, d) {
+
+  var z_miasta = people_data.filter(function (c) { return miejsce_id(c) == d.miasto_woj; });
+
+  var dziedziny_w_miescie = ludzie_do_dziedzin_dict(z_miasta);
+
+  dziedziny
+    .style("opacity", function (d) {
+      return dziedziny_w_miescie[d.dziedzina] ? 1 : 0.3;
+    })
+    .text(function (d) {
+      return [dziedziny_w_miescie[d.dziedzina] || "", d.dziedzina].join(" ");
+    });
+}
+
 
 </script>
