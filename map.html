@@ -8,13 +8,24 @@
 
 .city {
   /*cursor: crosshair;*/
-  fill: rgba(255, 0, 0, 0.2);
-  stroke: rgba(0, 0, 0, 0.5);
+  fill: rgba(255, 0, 0, 0.5);
+  stroke: rgba(0, 0, 0, 1);
   stroke-width: 0px;
+  opacity: 0.4;
 }
 
 .city:hover {
   stroke-width: 1px;
+}
+
+.dziedzina {
+  fill: #333;
+}
+
+.dziedzina:hover {
+  fill: #000;
+  stroke: #000;
+  stroke-width: 0.7px;
 }
 
 </style>
@@ -38,6 +49,9 @@ var path = d3.geo.path()
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
+
+
+var CZAS_PRZEJSCIA = 500;
 
 
 function miejsce_id (d) {
@@ -165,9 +179,7 @@ function odswiez_rok (people_data, rok) {
       .append("title")
         .text(function (d) { return d.miasto_woj; });
 
-  miasta.transition()
-    .duration(1000)
-      .attr("r", function (d) { return 3 * Math.sqrt(d.osoby); });
+  wyswietl_miasta_wszystkie(miasta);
 
   var dziedziny = svg.selectAll('.dziedzina')
     .data(ludzie_do_dziedzin(people_data));
@@ -215,8 +227,10 @@ function wyswietl_dziedziny_w_miescie (dziedziny, people_data, d) {
 
 function wyswietl_miasta_wszystkie (miasta) {
 
-  miasta
-    .attr("r", function (d) { return 3 * Math.sqrt(d.osoby); });
+  miasta.transition()
+    .duration(CZAS_PRZEJSCIA)
+      .style("opacity", 0.5)
+      .attr("r", function (d) { return 3 * Math.sqrt(d.osoby); });
 
 }
 
@@ -227,8 +241,10 @@ function wyswietl_miasta_w_dziedzinie (miasta, people_data, d) {
 
   var miasta_w_dziedzinie = ludzie_do_miast_zliczenia(czesc_ludzi);
 
-  miasta
-    .attr("r", function (d) { return 3 * Math.sqrt(miasta_w_dziedzinie[d.miasto_woj] || 0); });
+  miasta.transition()
+    .duration(CZAS_PRZEJSCIA)
+      .style("opacity", 1)
+      .attr("r", function (d) { return 3 * Math.sqrt(miasta_w_dziedzinie[d.miasto_woj] || 0); });
 
 }
 
