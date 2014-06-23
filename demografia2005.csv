@@ -1,0 +1,482 @@
+,miejscowosc,wojewodztwo,typ,dziedzina,lng,lat
+0,Warszawa,mazowieckie,POZ,literatura,21.0122287,52.2296756
+1,Szczecin,zachodniopomorskie,POZ,chemia,14.6674618,53.3773841
+2,Warszawa,mazowieckie,MUZ,muzyka,21.0122287,52.2296756
+3,Łódź,łódzkie,POZ,filozofia,19.4516525,51.8010292
+4,Luchowo,wielkopolskie,POZ,matematyka,17.2657998,53.2530361
+5,Lublin,lubelskie,POZ,historia,22.556178,51.26911920000001
+6,Nowogard,zachodniopomorskie,POZ,politologia,15.1163739,53.6741795
+7,Wilków,opolskie,POZ,historia,17.649817,51.1146113
+8,Gdynia,pomorskie,POZ,informatyka,18.4490251,54.5459594
+9,Biecz,małopolskie,PLA,plastyka,21.2521426,49.7380244
+10,Kliniska Wielkie,zachodniopomorskie,POZ,chemia,14.7733333,53.46166669999999
+11,Rzeszów,podkarpackie,POZ,biologia,22.0046329,50.024744
+12,Marki,mazowieckie,MUZ,muzyka,21.1035662,52.3213443
+13,Gdańsk,pomorskie,BAL,balet,18.5857143,54.3462257
+14,Poznań,dolnośląskie,MUZ,muzyka,16.5314496,51.6757064
+15,Sanok,podkarpackie,POZ,fizyka,22.2060658,49.55501870000001
+16,Bielsko-Biała,śląskie,POZ,biologia,19.0193824,49.8121337
+17,Łódź,łódzkie,POZ,biologia,19.4516525,51.8010292
+18,Ustronie Morskie,zachodniopomorskie,POZ,matematyka,15.7598831,54.2019274
+19,Aleksandrów Łódzki,łódzkie,POZ,fizyka,19.2616204,51.82013689999999
+20,Lublin,lubelskie,MUZ,muzyka,22.556178,51.26911920000001
+21,Szczecin,zachodniopomorskie,POZ,matematyka,14.6674618,53.3773841
+22,Bielsko-Biała,śląskie,POZ,matematyka,19.0193824,49.8121337
+23,Gostyń,śląskie,POZ,informatyka,18.8828234,50.1033649
+24,Izabelin,mazowieckie,MUZ,muzyka,20.8231878,52.2834825
+25,Szczecin,zachodniopomorskie,POZ,chemia,14.6674618,53.3773841
+26,Starzyno,pomorskie,POZ,literatura,18.2628938,54.75586449999999
+27,Starzyno,pomorskie,POZ,historia,18.2628938,54.75586449999999
+28,Gdańsk,pomorskie,POZ,humanistyka,18.5857143,54.3462257
+29,Warszawa,mazowieckie,MUZ,muzyka,21.0122287,52.2296756
+30,Rzeszów,podkarpackie,POZ,geografia,22.0046329,50.024744
+31,Lublin,lubelskie,POZ,historia,22.556178,51.26911920000001
+32,Ligota,śląskie,PLA,plastyka,18.9575,49.8795278
+33,Warszawa,mazowieckie,MUZ,muzyka,21.0122287,52.2296756
+34,Bielsko-Biała,śląskie,PLA,plastyka,19.0193824,49.8121337
+35,Nowy Sącz,małopolskie,PLA,plastyka,20.7153326,49.6174535
+36,Nowy Sącz,małopolskie,POZ,humanistyka,20.7153326,49.6174535
+37,Gdańsk,pomorskie,POZ,informatyka,18.5857143,54.3462257
+38,Lubaczów,podkarpackie,POZ,humanistyka,23.1387468,50.156415
+39,Warszawa,mazowieckie,PLA,plastyka,21.0122287,52.2296756
+40,Antoniów,dolnośląskie,PLA,plastyka,15.5514298,50.9057968
+41,Radom,mazowieckie,POZ,fizyka,21.1471333,51.40272359999999
+42,Stalowa Wola,podkarpackie,POZ,matematyka,22.053586,50.5826005
+43,Szczecin,zachodniopomorskie,POZ,matematyka,14.6674618,53.3773841
+44,Kęty,małopolskie,POZ,fizyka,19.2213846,49.87793240000001
+45,Kęty,małopolskie,POZ,politologia,19.2213846,49.87793240000001
+46,Niedźwiedź,małopolskie,POZ,humanistyka,20.0926064,49.6076079
+47,Poręba Wielka,małopolskie,MUZ,muzyka,20.0926064,49.6076079
+48,Brzeźnica,małopolskie,POZ,literatura,19.6317581,49.9503154
+49,Łódź,łódzkie,MUZ,muzyka,19.4516525,51.8010292
+50,Piła,wielkopolskie,MUZ,muzyka,16.7382266,53.1509671
+51,Kraków,małopolskie,POZ,fizyka,19.8735418,50.0906143
+52,Siedlce,mazowieckie,MUZ,muzyka,22.3046548,52.15593639999999
+53,Troszyn,zachodniopomorskie,POZ,matematyka,14.4537878,52.7882785
+54,Wałcz,zachodniopomorskie,POZ,literatura,16.4752847,53.2734739
+55,Poznań,wielkopolskie,MUZ,muzyka,16.8387079,52.4080886
+56,Ełk,warmińsko-mazurskie,POZ,humanistyka,22.3607234,53.8462486
+57,Kluczbork,opolskie,POZ,geografia,18.21807,50.97235
+58,Kluczbork,opolskie,POZ,matematyka,18.21807,50.97235
+59,Wrocław,dolnośląskie,MUZ,muzyka,17.0956726,51.1141338
+60,Warszawa,mazowieckie,POZ,ekonomia,21.0122287,52.2296756
+61,Leszno,wielkopolskie,POZ,matematyka,16.5937545,51.8419861
+62,Bielsko-Biała,śląskie,PLA,plastyka,19.0193824,49.8121337
+63,Kraków,małopolskie,MUZ,muzyka,19.8735418,50.0906143
+64,Kraków,małopolskie,POZ,matematyka,19.8735418,50.0906143
+65,Łańcut,podkarpackie,POZ,matematyka,22.2574879,50.0777803
+66,Chorzów,śląskie,POZ,humanistyka,18.9545728,50.2974884
+67,Bydgoszcz,kujawsko-pomorskie,POZ,matematyka,18.0280647,53.13152119999999
+68,Jaworzno,śląskie,POZ,matematyka,19.2739314,50.204987
+69,Bytom,śląskie,MUZ,muzyka,18.9157175,50.3483816
+70,Mszana Dolna,małopolskie,POZ,chemia,20.0742174,49.6799732
+71,Baczyna,lubuskie,POZ,biologia,15.0937112,52.7617121
+72,Porąbka,śląskie,POZ,matematyka,19.2443988,49.8208574
+73,Pisarzowice,małopolskie,POZ,historia,19.1455849,49.8834508
+74,Jaworze,śląskie,POZ,historia,18.9422222,49.8061111
+75,Dąbrowa Górnicza,śląskie,MUZ,muzyka,19.1949126,50.3216897
+76,Raciąż,mazowieckie,POZ,historia,20.1079605,52.77985169999999
+77,Poznań,wielkopolskie,MUZ,muzyka,16.8387079,52.4080886
+78,NJ-07016  Cranford,wielkopolskie,MUZ,muzyka,17.3522939,52.279986
+79,Piaski,łódzkie,POZ,fizyka,18.4554178,51.3541936
+80,Konin,wielkopolskie,POZ,fizyka,18.2510729,52.2230334
+81,Białystok,podlaskie,MUZ,muzyka,23.1572628,53.1295852
+82,Katowice,śląskie,MUZ,muzyka,19.0885353,50.26430509999999
+83,Kielce,świętokrzyskie,POZ,chemia,20.5769729,50.8856697
+84,Gdów,małopolskie,POZ,matematyka,20.2347881,49.9172689
+85,Mszana Dolna,małopolskie,MUZ,muzyka,20.0742174,49.6799732
+86,Sławno,zachodniopomorskie,MUZ,muzyka,16.6910066,54.3539717
+87,Murowany Most,podlaskie,POZ,historia,23.2158579,54.2326784
+88,Szczecin,zachodniopomorskie,POZ,biologia,14.6674618,53.3773841
+89,Poznań,wielkopolskie,MUZ,muzyka,16.8387079,52.4080886
+90,Gronowo,kujawsko-pomorskie,POZ,informatyka,18.7808788,53.04982589999999
+91,Mikołów,śląskie,MUZ,muzyka,18.9038037,50.1790184
+92,Warszawa,mazowieckie,POZ,humanistyka,21.0122287,52.2296756
+93,Kielce,świętokrzyskie,POZ,języki obce,20.5769729,50.8856697
+94,Skoczów,śląskie,POZ,matematyka,18.8067375,49.8156816
+95,Skierniewice,łódzkie,POZ,chemia,20.1583303,51.9547169
+96,Wolbrom,małopolskie,POZ,informatyka,19.7426799,50.39091
+97,Biłgoraj,lubelskie,POZ,biologia,22.72198,50.54099
+98,Katowice,śląskie,POZ,informatyka,19.0885353,50.26430509999999
+99,Jamno,zachodniopomorskie,MUZ,muzyka,16.1675,54.245
+100,Sosnowiec,śląskie,POZ,humanistyka,19.1840229,50.2646942
+101,Dzierżoniów,dolnośląskie,POZ,chemia,16.6773576,50.7539138
+102,Kędzierzyn-Koźle,opolskie,MUZ,muzyka,18.2261844,50.3498805
+103,Police,zachodniopomorskie,POZ,chemia,14.5587194,53.5099289
+104,Toporzysko,małopolskie,POZ,humanistyka,19.8496202,49.6352647
+105,Gdynia,pomorskie,POZ,chemia,18.4490251,54.5459594
+106,Gdynia,pomorskie,MUZ,muzyka,18.4490251,54.5459594
+107,Cieszyn,śląskie,POZ,chemia,18.6354709,49.7497638
+108,Wrocław,dolnośląskie,MUZ,muzyka,17.0956726,51.1141338
+109,Poznań,wielkopolskie,POZ,literatura,16.8387079,52.4080886
+110,Warszawa,mazowieckie,MUZ,muzyka,21.0122287,52.2296756
+111,Police,zachodniopomorskie,POZ,matematyka,14.5587194,53.5099289
+112,Tomaszów Maz.,łódzkie,POZ,matematyka,20.0086471,51.5311945
+113,Koszalin,zachodniopomorskie,POZ,historia,16.2049264,54.1949386
+114,Kościan,wielkopolskie,POZ,informatyka,16.6814801,52.0951672
+115,Bydgoszcz,kujawsko-pomorskie,POZ,historia sztuki,18.0280647,53.13152119999999
+116,Wysoka,dolnośląskie,MUZ,muzyka,17.0083333,51.0458333
+117,Gdańsk,pomorskie,MUZ,muzyka,18.5857143,54.3462257
+118,Gdynia,pomorskie,MUZ,muzyka,18.4490251,54.5459594
+119,Przemyśl,podkarpackie,MUZ,muzyka,22.7677908,49.7838623
+120,Białystok,podlaskie,POZ,literatura,23.1572628,53.1295852
+121,Gdańsk,pomorskie,MUZ,muzyka,18.5857143,54.3462257
+122,Częstochowa,śląskie,POZ,biologia,19.1203094,50.8118195
+123,Lubin,dolnośląskie,MUZ,muzyka,16.1938917,51.4042025
+124,Aleksandrów Łódzki,łódzkie,POZ,biologia,19.2616204,51.82013689999999
+125,Radom,mazowieckie,POZ,astronomia,21.1471333,51.40272359999999
+126,Skomielna Czarna,małopolskie,POZ,teatr,19.8365034,49.7266083
+127,Bydgoszcz,kujawsko-pomorskie,POZ,matematyka,18.0280647,53.13152119999999
+128,Bystrzyca,lubelskie,MUZ,muzyka,22.3268117,51.7840088
+129,Szczecin,zachodniopomorskie,POZ,historia,14.6674618,53.3773841
+130,Wałbrzych,dolnośląskie,POZ,biologia,16.2744197,50.7708702
+131,Białystok,podlaskie,POZ,matematyka,23.1572628,53.1295852
+132,Gdynia,pomorskie,POZ,matematyka,18.4490251,54.5459594
+133,Białowieża,podlaskie,PLA,plastyka,23.7729619,52.7093677
+134,Radom,mazowieckie,POZ,teatr,21.1471333,51.40272359999999
+135,Bydgoszcz,kujawsko-pomorskie,POZ,językoznawstwo,18.0280647,53.13152119999999
+136,Warszawa,mazowieckie,POZ,chemia,21.0122287,52.2296756
+137,Zawiercie,śląskie,POZ,matematyka,19.4166259,50.48774299999999
+138,Rakoniewice,wielkopolskie,POZ,chemia,16.2752471,52.14250269999999
+139,Nowy Sącz,małopolskie,PLA,plastyka,20.7153326,49.6174535
+140,Warszawa,mazowieckie,MUZ,muzyka,21.0122287,52.2296756
+141,Liplas,małopolskie,PLA,plastyka,20.2347881,49.9172689
+142,Wola Skrzydlańska,małopolskie,MUZ,muzyka,20.1847513,49.7477492
+143,Toruń,kujawsko-pomorskie,POZ,socjologia,18.5984437,53.0137902
+144,Kraków,małopolskie,MUZ,muzyka,19.8735418,50.0906143
+145,Bogucice,małopolskie,POZ,humanistyka,20.4871971,50.0476304
+146,Lubliniec,śląskie,POZ,chemia,18.6846192,50.66873529999999
+147,Lublin,lubelskie,POZ,historia,22.556178,51.26911920000001
+148,Choszczno,zachodniopomorskie,POZ,matematyka,15.3882813,53.1957882
+149,Czapury,wielkopolskie,POZ,fizyka,16.9336404,52.30413420000001
+150,Radom,mazowieckie,POZ,teatr,21.1471333,51.40272359999999
+151,Poznań,wielkopolskie,MUZ,muzyka,16.8387079,52.4080886
+152,Darnawa,lubuskie,PLA,plastyka,15.4482454,52.1475219
+153,Biała Piska,warmińsko-mazurskie,POZ,matematyka,22.0710731,53.6570972
+154,Przecław,zachodniopomorskie,PLA,plastyka,14.4726109,53.37375309999999
+155,Oleśnica,dolnośląskie,POZ,historia,17.3898504,51.2134346
+156,Kraków,małopolskie,POZ,informatyka,19.8735418,50.0906143
+157,Żary,lubuskie,MUZ,muzyka,15.1369992,51.6420121
+158,Wrocanka,podkarpackie,POZ,filozofia,21.5513724,49.7015732
+159,Warszawa,mazowieckie,MUZ,muzyka,21.0122287,52.2296756
+160,Wrocanka,podkarpackie,POZ,matematyka,21.5513724,49.7015732
+161,Kraków,małopolskie,MUZ,muzyka,19.8735418,50.0906143
+162,Rumia,pomorskie,POZ,wielokierunkowe,18.3878224,54.5707832
+163,Kraków,małopolskie,MUZ,muzyka,19.8735418,50.0906143
+164,Gdańsk,pomorskie,POZ,chemia,18.5857143,54.3462257
+165,Kraków,małopolskie,MUZ,muzyka,19.8735418,50.0906143
+166,Lubin,dolnośląskie,POZ,matematyka,16.1938917,51.4042025
+167,Łódź,łódzkie,MUZ,muzyka,19.4516525,51.8010292
+168,Częstochowa,śląskie,POZ,ekonomia,19.1203094,50.8118195
+169,Tczew,pomorskie,POZ,biologia,18.7587629,54.0742463
+170,Zawiercie,śląskie,POZ,biologia,19.4166259,50.48774299999999
+171,Borzęcin Duży,mazowieckie,MUZ,muzyka,20.7340892,52.2524252
+172,Warszawa,mazowieckie,PLA,plastyka,21.0122287,52.2296756
+173,Kraków,małopolskie,MUZ,muzyka,19.8735418,50.0906143
+174,Lubojna,śląskie,POZ,informatyka,19.1583682,50.9123077
+175,Ciechanów,mazowieckie,POZ,humanistyka,20.6316738,52.87895959999999
+176,Warszawa,mazowieckie,POZ,chemia,21.0122287,52.2296756
+177,Chorzów,śląskie,POZ,informatyka,18.9545728,50.2974884
+178,Poznań,wielkopolskie,MUZ,muzyka,16.8387079,52.4080886
+179,Poznań,wielkopolskie,MUZ,muzyka,16.8387079,52.4080886
+180,Santok,lubuskie,POZ,biologia,15.4045987,52.7427931
+181,Koszalin,zachodniopomorskie,MUZ,muzyka,16.2049264,54.1949386
+182,Bogucin,lubelskie,POZ,astronomia,22.3461706,51.370484
+183,Gliwice,śląskie,POZ,fizyka,18.6713802,50.29449229999999
+184,Chorzów,śląskie,POZ,informatyka,18.9545728,50.2974884
+185,Włocławek,kujawsko-pomorskie,POZ,fizyka,19.0677357,52.6483303
+186,Wesoła k. Warszawy,mazowieckie,MUZ,muzyka,21.225198,52.2329397
+187,Kraków,małopolskie,POZ,język polski,19.8735418,50.0906143
+188,Gdynia,pomorskie,MUZ,muzyka,18.4490251,54.5459594
+189,Warszawa,mazowieckie,POZ,biologia,21.0122287,52.2296756
+190,Kraków,małopolskie,MUZ,muzyka,19.8735418,50.0906143
+191,Szprotawa,lubuskie,POZ,matematyka,15.5877825,51.5657949
+192,Włocławek,kujawsko-pomorskie,POZ,informatyka,19.0677357,52.6483303
+193,Szczecin,zachodniopomorskie,POZ,historia,14.6674618,53.3773841
+194,Drwęsa,wielkopolskie,POZ,matematyka,16.6177778,52.4058333
+195,Żegocina,małopolskie,POZ,chemia,20.4270549,49.8074468
+196,Łódź,łódzkie,POZ,chemia,19.4516525,51.8010292
+197,Wrocław,dolnośląskie,POZ,politologia,17.0956726,51.1141338
+198,Włocławek,kujawsko-pomorskie,POZ,astronomia,19.0677357,52.6483303
+199,Siechnice,dolnośląskie,MUZ,muzyka,17.1566415,51.0394639
+200,Szczecin,zachodniopomorskie,POZ,nauki społeczne,14.6674618,53.3773841
+201,Katowice,śląskie,MUZ,muzyka,19.0885353,50.26430509999999
+202,Gorzeń Dln.,małopolskie,MUZ,muzyka,19.5068233,49.8657128
+203,Kraków,małopolskie,MUZ,muzyka,19.8735418,50.0906143
+204,Bystra,śląskie,POZ,matematyka,19.058374,49.7559008
+205,Gliwice,śląskie,POZ,historia,18.6713802,50.29449229999999
+206,Bieruń,śląskie,MUZ,muzyka,19.09291,50.08999
+207,Lublin,lubelskie,POZ,informatyka,22.556178,51.26911920000001
+208,Bydgoszcz,kujawsko-pomorskie,POZ,informatyka,18.0280647,53.13152119999999
+209,Łańcut,podkarpackie,POZ,politologia,22.2574879,50.0777803
+210,Wrocław,dolnośląskie,MUZ,muzyka,17.0956726,51.1141338
+211,Wrocław,dolnośląskie,POZ,literatura,17.0956726,51.1141338
+212,Jelenia Góra,dolnośląskie,MUZ,muzyka,15.7193616,50.9044171
+213,Ozimek,opolskie,POZ,matematyka,18.2368057,50.6988802
+214,Mława,mazowieckie,MUZ,muzyka,20.3837208,53.1122632
+215,Szczecin,zachodniopomorskie,POZ,biologia,14.6674618,53.3773841
+216,Kraków,małopolskie,MUZ,muzyka,19.8735418,50.0906143
+217,Włocławek,kujawsko-pomorskie,POZ,fizyka,19.0677357,52.6483303
+218,Pilica,śląskie,POZ,fizyka,19.6830999,50.4873856
+219,Pilica,śląskie,POZ,matematyka,19.6830999,50.4873856
+220,Częstochowa,śląskie,POZ,astronomia,19.1203094,50.8118195
+221,Jeziorzany,małopolskie,MUZ,muzyka,19.7289065,50.0398933
+222,Wrocław,dolnośląskie,MUZ,muzyka,16.7301471,51.4419754
+223,Szczecin,zachodniopomorskie,POZ,filozofia,14.6674618,53.3773841
+224,Warszawa,mazowieckie,POZ,humanistyka,21.0122287,52.2296756
+225,Gliwice,śląskie,POZ,informatyka,18.6713802,50.29449229999999
+226,Zabrze,śląskie,POZ,matematyka,18.7857186,50.3249278
+227,Lipno,kujawsko-pomorskie,POZ,fizyka,19.1593348,52.80916879999999
+228,Bydgoszcz,kujawsko-pomorskie,POZ,matematyka,18.0280647,53.13152119999999
+229,Wrocław,dolnośląskie,MUZ,muzyka,17.0956726,51.1141338
+230,Dębica,podkarpackie,POZ,matematyka,21.4116964,50.0516417
+231,Bielsko-Biała,śląskie,POZ,matematyka,19.0193824,49.8121337
+232,Szczecin,zachodniopomorskie,POZ,chemia,14.6674618,53.3773841
+233,Katowice,śląskie,POZ,matematyka,19.0885353,50.26430509999999
+234,Łomianki,mazowieckie,POZ,teatr,20.8652486,52.3480116
+235,Zielona Góra,lubuskie,POZ,astronomia,15.4715929,51.9451446
+236,Toruń,kujawsko-pomorskie,MUZ,muzyka,18.5984437,53.0137902
+237,Bielsko-Biała,śląskie,POZ,matematyka,19.0193824,49.8121337
+238,Trzebiatów,zachodniopomorskie,POZ,historia,15.3068705,54.06060309999999
+239,Schodnia Nowa,opolskie,POZ,matematyka,18.2368057,50.6988802
+240,Tymbark,małopolskie,MUZ,muzyka,20.3174497,49.736915
+241,Mikołów,śląskie,POZ,matematyka,18.9038037,50.1790184
+242,Szczecin,zachodniopomorskie,POZ,chemia,14.6674618,53.3773841
+243,Warszawa,mazowieckie,POZ,geografia,21.0122287,52.2296756
+244,Jakubowice Konińskie,lubelskie,POZ,informatyka,22.588297,51.31612200000001
+245,Józefów,mazowieckie,MUZ,muzyka,21.2344684,52.1457405
+246,Prudnik,opolskie,POZ,biologia,17.5361112,50.3289555
+247,Gdańsk,pomorskie,MUZ,muzyka,18.5857143,54.3462257
+248,Szczecin,zachodniopomorskie,MUZ,muzyka,14.6674618,53.3773841
+249,Wrocław,dolnośląskie,POZ,matematyka,17.0956726,51.1141338
+250,Lubicz Górny,kujawsko-pomorskie,MUZ,muzyka,18.7708243,53.02616829999999
+251,Mściwojów,dolnośląskie,POZ,fizyka,16.2612427,51.063526
+252,Raciąż,mazowieckie,POZ,historia,20.1079605,52.77985169999999
+253,Płock,mazowieckie,POZ,matematyka,19.7751366,52.5363656
+254,Żyrardów,mazowieckie,POZ,fizyka,20.445988,52.048652
+255,Kraków,małopolskie,POZ,matematyka,19.8735418,50.0906143
+256,Włocławek,kujawsko-pomorskie,POZ,astronomia,19.0677357,52.6483303
+257,Łużna,małopolskie,POZ,matematyka,21.0458599,49.712424
+258,Zawiercie,śląskie,POZ,socjologia,19.4166259,50.48774299999999
+259,Gdynia,pomorskie,POZ,informatyka,18.4490251,54.5459594
+260,Skierniewice,łódzkie,POZ,matematyka,20.1583303,51.9547169
+261,Konin,wielkopolskie,POZ,chemia,18.2510729,52.2230334
+262,Bulowice,małopolskie,POZ,biologia,19.2913077,49.8756423
+263,Barany,warmińsko-mazurskie,POZ,ornitologia,22.3327887,53.7876688
+264,Ostrołęka,mazowieckie,POZ,matematyka,21.6031379,53.0505828
+265,Bielsko-Biała,śląskie,POZ,informatyka,19.0193824,49.8121337
+266,Strzałkowo,wielkopolskie,MUZ,muzyka,17.8075499,52.3199234
+267,Blachownia,śląskie,POZ,chemia,18.96224,50.78505
+268,Białystok,podlaskie,POZ,fizyka,23.1572628,53.1295852
+269,Puławy,lubelskie,POZ,astronomia,21.969309,51.4164431
+270,Olsztyn,warmińsko-mazurskie,PLA,plastyka,20.5155763,53.7405471
+271,Bydgoszcz,kujawsko-pomorskie,POZ,matematyka,18.0280647,53.13152119999999
+272,Pruszków,mazowieckie,MUZ,muzyka,20.8232002,52.1581039
+273,Łaziska Górne,śląskie,POZ,matematyka,18.84028,50.1494
+274,Szczecin,zachodniopomorskie,POZ,literatura,14.6674618,53.3773841
+275,Gliwice,śląskie,POZ,matematyka,18.6713802,50.29449229999999
+276,Kędzierzyn-Koźle,śląskie,MUZ,muzyka,18.3503499,50.2899294
+277,Wiskitki,mazowieckie,MUZ,muzyka,20.331731,52.0735785
+278,Pęchów,świętokrzyskie,POZ,biologia,21.4603162,50.6683684
+279,Pabianice,łódzkie,MUZ,muzyka,19.35776,51.6567303
+280,Bydgoszcz,kujawsko-pomorskie,POZ,chemia,18.0280647,53.13152119999999
+281,Stanisławów,mazowieckie,POZ,matematyka,21.5490804,52.2920457
+282,Mierzyn,zachodniopomorskie,POZ,chemia,14.4540345,53.4308992
+283,Gdańsk,pomorskie,MUZ,muzyka,18.5857143,54.3462257
+284,Obidza,małopolskie,PLA,plastyka,20.5085781,49.5210255
+285,Radom,mazowieckie,POZ,fizyka,21.1471333,51.40272359999999
+286,Pawłowice,śląskie,POZ,matematyka,18.7183205,49.9629943
+287,Gostyń,wielkopolskie,POZ,historia,17.01215,51.8786
+288,Warszawa,mazowieckie,PLA,plastyka,21.0122287,52.2296756
+289,Wąsosz,śląskie,MUZ,muzyka,18.9932795,50.7245067
+290,Szczecin,zachodniopomorskie,MUZ,muzyka,14.6674618,53.3773841
+291,Kraków,małopolskie,POZ,matematyka,19.8735418,50.0906143
+292,Czechowice-Dziedzice,śląskie,POZ,matematyka,18.9917676,49.9016056
+293,Warszawa,mazowieckie,POZ,matematyka,21.0122287,52.2296756
+294,Nowy Sącz,małopolskie,POZ,fizyka,20.7153326,49.6174535
+295,Łódź,łódzkie,POZ,genetyka,19.4516525,51.8010292
+296,Kraków,małopolskie,MUZ,muzyka,19.8735418,50.0906143
+297,Olecko,warmińsko-mazurskie,MUZ,muzyka,22.4868005,54.0103571
+298,Bydgoszcz,kujawsko-pomorskie,POZ,matematyka,18.0280647,53.13152119999999
+299,Pińczów,świętokrzyskie,POZ,biologia,20.5478753,50.5043592
+300,Chajew,łódzkie,MUZ,muzyka,18.4528779,51.5176108
+301,Warszawa,mazowieckie,MUZ,muzyka,21.0122287,52.2296756
+302,Stalowa Wola,podkarpackie,POZ,matematyka,22.053586,50.5826005
+303,Bielsko-Biała,śląskie,POZ,informatyka,19.0193824,49.8121337
+304,Łódź,łódzkie,POZ,chemia,19.4516525,51.8010292
+305,Szczecin,zachodniopomorskie,MUZ,muzyka,14.6674618,53.3773841
+306,Biłgoraj,lubelskie,POZ,humanistyka,22.72198,50.54099
+307,Bydgoszcz,kujawsko-pomorskie,POZ,matematyka,18.0280647,53.13152119999999
+308,Sosnowiec,śląskie,POZ,matematyka,19.1840229,50.2646942
+309,Poznań,wielkopolskie,MUZ,muzyka,16.8387079,52.4080886
+310,Sierpc,mazowieckie,POZ,matematyka,19.6768038,52.8549716
+311,Koszalin,zachodniopomorskie,POZ,chemia,16.2049264,54.1949386
+312,Lublin,lubelskie,POZ,humanistyka,22.556178,51.26911920000001
+313,Kluczbork,opolskie,POZ,matematyka,18.21807,50.97235
+314,Rzeszów,podkarpackie,POZ,chemia,22.0046329,50.024744
+315,Leszno,wielkopolskie,POZ,biologia,16.5937545,51.8419861
+316,Ełk,warmińsko-mazurskie,POZ,historia,22.3607234,53.8462486
+317,Katowice,śląskie,POZ,matematyka,19.0885353,50.26430509999999
+318,Leszno,wielkopolskie,POZ,matematyka,16.5937545,51.8419861
+319,Warszawa,mazowieckie,POZ,matematyka,21.0122287,52.2296756
+320,Żary,lubuskie,POZ,chemia,15.1369992,51.6420121
+321,Koszalin,wielkopolskie,MUZ,muzyka,16.8399304,52.4560849
+322,Pilawa,mazowieckie,POZ,informatyka,21.5496435,51.9693404
+323,Włoszakowice,wielkopolskie,POZ,historia sztuki,16.3557044,51.9569286
+324,Kraków,małopolskie,POZ,informatyka,19.8735418,50.0906143
+325,Gliwice,śląskie,POZ,matematyka,18.6713802,50.29449229999999
+326,Gdynia,pomorskie,POZ,astronomia,18.4490251,54.5459594
+327,Suchedniów,świętokrzyskie,POZ,historia,20.8191286,51.0510677
+328,Kłębowiec,zachodniopomorskie,POZ,biologia,16.4752847,53.2734739
+329,Warszawa,mazowieckie,PLA,plastyka,21.0122287,52.2296756
+330,Warszawa,mazowieckie,PLA,plastyka,21.0122287,52.2296756
+331,Gliwice,śląskie,POZ,historia,18.6713802,50.29449229999999
+332,Sienno,kujawsko-pomorskie,POZ,biologia,18.1572803,53.2389223
+333,Trzebnica,dolnośląskie,POZ,biologia,17.1069271,51.337823
+334,Tymbark,małopolskie,MUZ,muzyka,20.3174497,49.736915
+335,Police,zachodniopomorskie,POZ,chemia,14.5587194,53.5099289
+336,Łódź,łódzkie,POZ,geografia,19.4516525,51.8010292
+337,Warszawa,mazowieckie,POZ,matematyka,21.0122287,52.2296756
+338,Gródek,pomorskie,MUZ,muzyka,18.1531164,54.2944252
+339,Dąbrowa Górnicza,śląskie,MUZ,muzyka,19.1949126,50.3216897
+340,Luboszyce,opolskie,POZ,matematyka,17.9689593,50.7149729
+341,Szczecin,zachodniopomorskie,POZ,filozofia,14.6674618,53.3773841
+342,Czarnowąsy,opolskie,MUZ,muzyka,17.9,50.7166667
+343,Siedlce,mazowieckie,MUZ,muzyka,22.3046548,52.15593639999999
+344,Kraków,małopolskie,MUZ,muzyka,19.8735418,50.0906143
+345,Toruń,kujawsko-pomorskie,POZ,chemia,18.5984437,53.0137902
+346,Łódź,łódzkie,POZ,matematyka,19.4516525,51.8010292
+347,Mosina,wielkopolskie,MUZ,muzyka,16.8491949,52.2344862
+348,Warszawa,mazowieckie,POZ,matematyka,21.0122287,52.2296756
+349,Oświęcim,małopolskie,POZ,chemia,19.2097782,50.0343982
+350,Bogacica,opolskie,MUZ,muzyka,18.1360737,50.9300984
+351,Otwock,mazowieckie,POZ,biologia,21.2616248,52.1053186
+352,Skierniewice,łódzkie,POZ,chemia,20.1583303,51.9547169
+353,Zgierz,łódzkie,POZ,wielokierunkowe,19.4060704,51.85505759999999
+354,Radom,mazowieckie,POZ,biologia,21.1471333,51.40272359999999
+355,Bytom,śląskie,MUZ,muzyka,18.9157175,50.3483816
+356,Mielec,podkarpackie,POZ,chemia,21.4238101,50.287063
+357,Katowice,śląskie,POZ,matematyka,19.0885353,50.26430509999999
+358,Warszawa,mazowieckie,MUZ,muzyka,21.0122287,52.2296756
+359,Olszanica,podkarpackie,POZ,astronomia,22.4496086,49.4715988
+360,Police,zachodniopomorskie,POZ,historia sztuki,14.5587194,53.5099289
+361,Gdańsk,pomorskie,MUZ,muzyka,18.5857143,54.3462257
+362,Radom,mazowieckie,MUZ,muzyka,21.1471333,51.40272359999999
+363,Kowal,kujawsko-pomorskie,POZ,fizyka,19.2038578,52.4910162
+364,Częstochowa,śląskie,PLA,plastyka,19.1203094,50.8118195
+365,Warszawa,mazowieckie,MUZ,muzyka,21.0122287,52.2296756
+366,Radom,mazowieckie,POZ,fizyka,21.1471333,51.40272359999999
+367,Szczecin,zachodniopomorskie,POZ,chemia,14.6674618,53.3773841
+368,Koszalin,zachodniopomorskie,MUZ,muzyka,16.2049264,54.1949386
+369,Gostyń,wielkopolskie,POZ,biologia,17.01215,51.8786
+370,Lublin,lubelskie,POZ,matematyka,22.556178,51.26911920000001
+371,Szczecin,zachodniopomorskie,POZ,matematyka,14.6674618,53.3773841
+372,Tymbark,małopolskie,MUZ,muzyka,20.3174497,49.736915
+373,Gryfice,zachodniopomorskie,POZ,historia,15.1998891,53.91666000000001
+374,Białystok,podlaskie,POZ,fizyka,23.1572628,53.1295852
+375,Laskowa,małopolskie,POZ,nauki społeczne,20.4874171,49.7696808
+376,Bukowno,małopolskie,POZ,matematyka,19.44484,50.26508
+377,Gdańsk,pomorskie,POZ,informatyka,18.5857143,54.3462257
+378,Stalowa Wola,podkarpackie,POZ,matematyka,22.053586,50.5826005
+379,Radomsko,łódzkie,MUZ,muzyka,19.4449387,51.0668544
+380,Podgórzyn,kujawsko-pomorskie,POZ,astronomia,17.719477,52.84938469999999
+381,Kamień Pomorski,zachodniopomorskie,POZ,chemia,14.819182,53.9336892
+382,Koszalin,zachodniopomorskie,MUZ,muzyka,16.2049264,54.1949386
+383,Katowice,śląskie,POZ,matematyka,19.0885353,50.26430509999999
+384,Mirosławiec,zachodniopomorskie,MUZ,muzyka,16.0872459,53.34179409999999
+385,Łódź,łódzkie,POZ,chemia,19.4516525,51.8010292
+386,Częstochowa,śląskie,POZ,elektronika,19.1203094,50.8118195
+387,Lubaczów,podkarpackie,POZ,historia,23.1387468,50.156415
+388,Brzozówka,mazowieckie,POZ,historia,21.2351713,51.7303035
+389,Tczew,pomorskie,POZ,historia,18.7587629,54.0742463
+390,Kraków,małopolskie,POZ,matematyka,19.8735418,50.0906143
+391,Kęty,małopolskie,POZ,historia,19.2213846,49.87793240000001
+392,Lubanie,kujawsko-pomorskie,POZ,chemia,18.8961565,52.7528987
+393,Łambinowice,opolskie,POZ,humanistyka,17.5390756,50.5523655
+394,Świętochłowice,śląskie,MUZ,muzyka,18.9171297,50.2964328
+395,Warszawa,mazowieckie,POZ,matematyka,21.0122287,52.2296756
+396,Gdańsk,pomorskie,POZ,astronomia,18.5857143,54.3462257
+397,Rzeszów,podkarpackie,POZ,nauki społeczne,22.0046329,50.024744
+398,Szczecin,zachodniopomorskie,POZ,chemia,14.6674618,53.3773841
+399,Kętrzyn,warmińsko-mazurskie,POZ,fizyka,21.37504,54.07657
+400,Toruń,kujawsko-pomorskie,POZ,matematyka,18.5984437,53.0137902
+401,Żagań,lubuskie,MUZ,muzyka,15.3248325,51.6178445
+402,Wrocław,dolnośląskie,POZ,językoznawstwo,17.0956726,51.1141338
+403,Kolonia Zawada,mazowieckie,POZ,historia,21.5492677,52.1644691
+404,Gdynia,pomorskie,POZ,matematyka,18.4490251,54.5459594
+405,Warszawa,mazowieckie,MUZ,muzyka,21.0122287,52.2296756
+406,Białystok,podlaskie,MUZ,muzyka,23.1572628,53.1295852
+407,Końskie,świętokrzyskie,POZ,informatyka,20.4068498,51.19146929999999
+408,Wrocław,dolnośląskie,POZ,matematyka,17.0956726,51.1141338
+409,Wrocław,dolnośląskie,POZ,informatyka,17.0956726,51.1141338
+410,Szczecin,zachodniopomorskie,MUZ,muzyka,14.6674618,53.3773841
+411,Ustronie Morskie,zachodniopomorskie,POZ,matematyka,15.7598831,54.2019274
+412,Rudniki,śląskie,MUZ,muzyka,19.2462227,50.8781672
+413,Warszawa,mazowieckie,POZ,ekonomia,21.0122287,52.2296756
+414,Lublin,lubelskie,MUZ,muzyka,22.556178,51.26911920000001
+415,Żary,lubuskie,POZ,fizyka,15.1369992,51.6420121
+416,Warszawa,mazowieckie,MUZ,muzyka,21.0122287,52.2296756
+417,Łódź,łódzkie,POZ,chemia,19.4516525,51.8010292
+418,Wisznice,lubelskie,POZ,informatyka,23.1827422,51.7875857
+419,Łańcut,podkarpackie,POZ,geografia,22.2574879,50.0777803
+420,Tarnowskie Góry,śląskie,BAL,balet,18.8195062,50.4369287
+421,Rzeszów,podkarpackie,POZ,chemia,22.0046329,50.024744
+422,Mielec,podkarpackie,POZ,chemia,21.4238101,50.287063
+423,Bydgoszcz,kujawsko-pomorskie,POZ,informatyka,18.0280647,53.13152119999999
+424,Wręczyca,śląskie,POZ,chemia,18.974066,50.8355186
+425,Kraków,małopolskie,POZ,matematyka,19.8735418,50.0906143
+426,Brzeźnica,podkarpackie,POZ,biologia,21.4807042,50.10031720000001
+427,Warszawa,mazowieckie,POZ,matematyka,21.0122287,52.2296756
+428,Janów Lubelski,podkarpackie,POZ,muzyka,22.3634434,50.6772997
+429,Janów Lubelski,lubelskie,MUZ,muzyka,22.42462,50.6631053
+430,Raszków,wielkopolskie,POZ,historia,17.7384858,51.7182933
+431,Jelenia Góra,dolnośląskie,MUZ,muzyka,15.7193616,50.9044171
+432,Białystok,podlaskie,POZ,elektronika,23.1572628,53.1295852
+433,Gdańsk,pomorskie,MUZ,muzyka,18.5857143,54.3462257
+434,Rzeszów,podkarpackie,POZ,chemia,22.0046329,50.024744
+435,Włocławek,kujawsko-pomorskie,POZ,fizyka,19.0677357,52.6483303
+436,Rumia,pomorskie,BAL,balet,18.3878224,54.5707832
+437,Opole Lubelskie,lubelskie,POZ,języki obce,21.9683588,51.1044616
+438,Dąbrowa Górnicza,śląskie,POZ,matematyka,19.1949126,50.3216897
+439,Rumia,pomorskie,POZ,informatyka,18.3878224,54.5707832
+440,Elbląg,warmińsko-mazurskie,POZ,matematyka,19.4044897,54.1560613
+441,Bytom,śląskie,MUZ,muzyka,18.9157175,50.3483816
+442,Gdańsk,pomorskie,MUZ,muzyka,18.5857143,54.3462257
+443,Radomin,kujawsko-pomorskie,POZ,chemia,19.1694848,53.0860174
+444,Myśliborz,zachodniopomorskie,POZ,historia,14.86785,52.9237186
+445,Jedlnia Letnisko,mazowieckie,POZ,psychologia,21.3127152,51.4181314
+446,Puławy,lubelskie,POZ,matematyka,21.969309,51.4164431
+447,Jamno,zachodniopomorskie,MUZ,muzyka,16.1675,54.245
+448,Poznań,wielkopolskie,MUZ,muzyka,16.8387079,52.4080886
+449,Kościan,wielkopolskie,POZ,chemia,16.6814801,52.0951672
+450,Olsztyn,warmińsko-mazurskie,PLA,plastyka,20.5155763,53.7405471
+451,Białystok,podlaskie,MUZ,muzyka,23.1572628,53.1295852
+452,Częstochowa,śląskie,POZ,biologia,19.1203094,50.8118195
+453,Gdańsk,pomorskie,POZ,matematyka,18.5857143,54.3462257
+454,Gdańsk,pomorskie,POZ,matematyka,18.5857143,54.3462257
+455,Bielsko-Biała,śląskie,POZ,informatyka,19.0193824,49.8121337
+456,Warszawa,mazowieckie,MUZ,muzyka,21.0122287,52.2296756
+457,Częstochowa,śląskie,BAL,balet,19.1203094,50.8118195
+458,Gorlice,małopolskie,POZ,matematyka,21.16362,49.666275
+459,Pęzino,zachodniopomorskie,POZ,wielokierunkowe,15.17793,53.3281874
+460,Police,zachodniopomorskie,POZ,chemia,14.5587194,53.5099289
+461,Katowice,śląskie,MUZ,muzyka,19.0885353,50.26430509999999
+462,Łódź,łódzkie,POZ,informatyka,19.4516525,51.8010292
+463,Rypin,kujawsko-pomorskie,POZ,prawo,19.4094097,53.0657106
+464,Kluczbork,opolskie,POZ,matematyka,18.21807,50.97235
+465,Warszawa,mazowieckie,PLA,plastyka,21.0122287,52.2296756
+466,Suwałki,podlaskie,POZ,historia,22.9307881,54.1115218
+467,Trzebiatów,zachodniopomorskie,POZ,literatura,15.3068705,54.06060309999999
+468,Dzierżoniów,dolnośląskie,MUZ,muzyka,16.6773576,50.7539138
+469,Toruń,kujawsko-pomorskie,POZ,matematyka,18.5984437,53.0137902
+470,Tomaszów Mazowiecki,łódzkie,POZ,historia,20.0086471,51.5311945
+471,Poznań,wielkopolskie,MUZ,muzyka,16.8387079,52.4080886
+472,Warszawa,mazowieckie,MUZ,muzyka,21.0122287,52.2296756
+473,Miodówko,warmińsko-mazurskie,PLA,plastyka,20.4046186,53.625865
+474,Kutno,łódzkie,POZ,języki obce,19.364278,52.230618
+475,Częstochowa,śląskie,POZ,biologia,19.1203094,50.8118195
+476,Łaziska Górne,śląskie,POZ,matematyka,18.84028,50.1494
+477,Płock,mazowieckie,POZ,matematyka,19.7751366,52.5363656
+478,Słupsk,pomorskie,POZ,fizyka,17.0284824,54.46414799999999
+479,Kraków,małopolskie,MUZ,muzyka,19.8735418,50.0906143
+480,Gdańsk- Jasień,pomorskie,MUZ,muzyka,18.5482228,54.3397877
