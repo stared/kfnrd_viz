@@ -4,4 +4,3 @@
 * nie ma baletu w 2013?P
 * czasy przejścia, kolory itd
 * notka co to jest, podpis
-* przepis w README.md, źródła
