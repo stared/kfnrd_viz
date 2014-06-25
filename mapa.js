@@ -112,23 +112,30 @@ function zacznij_wizualizajce (poland_data, people_data) {
   svg.append("path")
       .datum(topojson.feature(poland_data, poland_data.objects.poland_border_coarse))
       .attr("d", path)
-      .attr("class", "poland")
-      .style("fill", "steelblue");
+      .attr("class", "polska");
 
   var lata = [];
   for (var rok = 1997; rok < 2014; rok++) lata.push(String(rok)); 
   // na razie na sztywno
 
 
-  svg.append("g").attr("id","lata").selectAll(".rok")
-        .data(lata).enter()
+  var lata = svg.append("g").attr("id","lata").selectAll(".rok")
+        .data(lata)
+
+  lata.enter()
           .append("text")
             .attr("class", "rok")
             .on("mouseover", function (d) {
+              lata
+                .attr("y", function (c) {
+                  return c == d ? 65 : 50;
+                });
               odswiez_rok(people_data.filter(function (c) { return c.rok === d; }));
             })
-            .attr("x", function (d, i) { return 70 + 40 * i; })
-            .attr("y", 30)
+            .attr("x", function (d, i) { return 60 + 45 * i; })
+            .attr("y", function (d) {
+              return d === "2004" ? 65 : 50;
+            })
             .text(function (d) { return d; });
 
   odswiez_rok(people_data.filter(function (d) { return d.rok === "2004"; }));
@@ -139,7 +146,6 @@ function odswiez_rok (people_data_rok) {
 
   var miasta = svg.selectAll('.city')
     .data(ludzie_do_miast(people_data_rok), function(d) {return d.miasto_woj; });
-  // BEZ var, inaczej coś źle przekazuje w wyswietl_miasta_w_dziedzinie
 
   miasta.enter()
     .append("circle")
