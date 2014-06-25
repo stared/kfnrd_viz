@@ -100,7 +100,7 @@ var ludzie_do_dziedzin_zliczenia = function (ludzie) {
 }
 
 
-d3.json("poland_border_coarse.topo.json", function(error_poland, poland_data) {
+d3.json("poland_border.topo.json", function(error_poland, poland_data) {
   d3.csv("kfnrd_miejsce_dziedzina.csv", function(error_dem, people_data) {
     zacznij_wizualizajce(poland_data, people_data);
   })
@@ -110,7 +110,7 @@ d3.json("poland_border_coarse.topo.json", function(error_poland, poland_data) {
 function zacznij_wizualizajce (poland_data, people_data) {
 
   svg.append("path")
-      .datum(topojson.feature(poland_data, poland_data.objects.poland_border_coarse))
+      .datum(topojson.feature(poland_data, poland_data.objects.poland_border))
       .attr("d", path)
       .attr("class", "polska");
 
