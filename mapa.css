@@ -1,0 +1,25 @@
+.poland {
+  /*cursor: crosshair;*/
+}
+
+.city {
+  /*cursor: crosshair;*/
+  fill: rgba(255, 0, 0, 0.5);
+  stroke: rgba(0, 0, 0, 1);
+  stroke-width: 0px;
+  opacity: 0.4;
+}
+
+.city:hover {
+  stroke-width: 1px;
+}
+
+.dziedzina {
+  fill: #333;
+}
+
+.dziedzina:hover {
+  fill: #000;
+  stroke: #000;
+  stroke-width: 0.7px;
+}
