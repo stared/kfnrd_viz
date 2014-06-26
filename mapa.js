@@ -116,6 +116,7 @@ function zacznij_wizualizajce (poland_data, people_data) {
 
   var lata = [];
   for (var rok = 1997; rok < 2014; rok++) lata.push(String(rok)); 
+  lata.push("WSZYSTKIE");
   // na razie na sztywno
 
 
@@ -130,9 +131,12 @@ function zacznij_wizualizajce (poland_data, people_data) {
                 .attr("y", function (c) {
                   return c == d ? 65 : 50;
                 });
-              odswiez_rok(people_data.filter(function (c) { return c.rok === d; }));
+              if (d === "WSZYSTKIE") 
+                odswiez_rok(people_data);
+              else
+                odswiez_rok(people_data.filter(function (c) { return c.rok === d; }));
             })
-            .attr("x", function (d, i) { return 60 + 45 * i; })
+            .attr("x", function (d, i) { return 30 + 45 * i; })
             .attr("y", function (d) {
               return d === "2004" ? 65 : 50;
             })
