@@ -156,13 +156,15 @@ function odswiez_rok (people_data_rok) {
       .attr("class", "city")
       .attr("cx", function (d) { return projection([d.lng, d.lat])[0]; })
       .attr("cy", function (d) { return projection([d.lng, d.lat])[1]; })
-      .attr("r", 0);
+      .attr("r", 0)
+      .append("title");
 
   miasta
       .on("mouseover", function (d) { wyswietl_dziedziny_w_miescie(dziedziny, people_data_rok, d); })
-      .on("mouseout", function (d) { wyswietl_dziedziny_wszystkie(dziedziny); })
-      .append("title")
-        .text(function (d) { return [d.osoby, "w", d.miasto_woj].join(" "); });
+      .on("mouseout", function (d) { wyswietl_dziedziny_wszystkie(dziedziny); });
+      
+  miasta.select("title")
+    .text(function (d) { return [d.osoby, "w", d.miasto_woj].join(" "); });
 
   miasta.exit()
     .transition().duration(CZAS_PRZEJSCIA)
