@@ -162,7 +162,7 @@ function odswiez_rok (people_data_rok) {
       .on("mouseover", function (d) { wyswietl_dziedziny_w_miescie(dziedziny, people_data_rok, d); })
       .on("mouseout", function (d) { wyswietl_dziedziny_wszystkie(dziedziny); })
       .append("title")
-        .text(function (d) { return d.miasto_woj; });
+        .text(function (d) { return [d.osoby, "w", d.miasto_woj].join(" "); });
 
   miasta.exit()
     .transition().duration(CZAS_PRZEJSCIA)
