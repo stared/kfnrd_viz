@@ -31,3 +31,21 @@
   font-size: 13px;
   font-family: sans-serif;
 }
+
+#stopka {
+  position: absolute;
+  top: 530px;
+  left: 580px;
+  padding: 12px;
+  /*width: 300px;*/
+  /*background: rgba(230, 230, 230, 0.85);*/
+  /*color: #222;*/
+  border: solid 1px #aaa;
+  border-radius: 4px;
+  z-index:20;
+  font-size: 13px;
+}
+
+a:link { color:#33a; text-decoration: none; }
+a:visited { color:#833; text-decoration: none; }
+a:hover { color:#aaa; text-decoration: none; }
