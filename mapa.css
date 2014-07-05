@@ -1,37 +1,40 @@
 .polska {
-  fill: steelblue;
+  fill: #E7B041;
 }
 
 .city {
   /*cursor: crosshair;*/
-  fill: rgba(255, 0, 0, 0.5);
+  fill: #567BBB;
   stroke: rgba(0, 0, 0, 1);
   stroke-width: 0px;
   opacity: 0.4;
 }
 
 .city:hover {
-  stroke-width: 1px;
+  /*stroke-width: 2px;*/
+  fill: #C20D19;
 }
 
 .dziedzina {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   font-size: 13px;
-  fill: #333;
+  fill: #000;
   cursor: default;
 }
 
 .dziedzina:hover {
-  fill: #000;
-  stroke: #000;
-  stroke-width: 0.7px;
+  fill: #C63628;
 }
 
 .rok {
-  fill: #333;
-  font-size: 13px;
+  fill: #000;
+  font-size: 12px;
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   cursor: default;
+}
+
+.rok.selected {
+  fill: #C20D19;
 }
 
 #stopka {
@@ -49,6 +52,15 @@
   cursor: default;
 }
 
-a:link { color:#33a; text-decoration: none; }
-a:visited { color:#833; text-decoration: none; }
-a:hover { color:#aaa; text-decoration: none; }
+a:link {
+ color: #4C8C3F;
+ text-decoration: none;
+}
+a:visited {
+ color: #4C8C3F;
+ text-decoration: none;
+}
+a:hover {
+ color: #C20D19;
+ text-decoration: none;
+}

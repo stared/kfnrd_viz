@@ -130,7 +130,10 @@ function zacznij_wizualizajce (poland_data, people_data) {
               lata
                 .attr("y", function (c) {
                   return c == d ? 65 : 50;
-                });
+                })
+                .classed("selected", function (c) {
+                  return c == d;
+                })
               if (d === "WSZYSTKIE") 
                 odswiez_rok(people_data);
               else
