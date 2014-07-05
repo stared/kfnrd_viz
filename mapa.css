@@ -15,8 +15,8 @@
 }
 
 .dziedzina {
-  font-family: serif;
-  font-size: 15px;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-size: 13px;
   fill: #333;
   cursor: default;
 }
@@ -30,7 +30,7 @@
 .rok {
   fill: #333;
   font-size: 13px;
-  font-family: sans-serif;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   cursor: default;
 }
 

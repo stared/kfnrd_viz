@@ -180,7 +180,7 @@ function odswiez_rok (people_data_rok) {
     .append("g")
       .attr("class", "dziedzina")
       .attr("transform", function (d, i) {
-        return "translate(700," + (100 + 20 * i) + ")";
+        return "translate(700," + (170 + 20 * i) + ")";
        });
 
   dziedziny_g.append("text")
@@ -203,7 +203,7 @@ function odswiez_rok (people_data_rok) {
 
   dziedziny.transition().duration(CZAS_PRZEJSCIA)
     .attr("transform", function (d, i) {
-      return "translate(700," + (100 + 20 * i) + ")";
+      return "translate(700," + (170 + 20 * i) + ")";
     });
 
 }
