@@ -18,6 +18,7 @@
   font-family: serif;
   font-size: 15px;
   fill: #333;
+  cursor: default;
 }
 
 .dziedzina:hover {
@@ -30,6 +31,7 @@
   fill: #333;
   font-size: 13px;
   font-family: sans-serif;
+  cursor: default;
 }
 
 #stopka {
@@ -44,6 +46,7 @@
   border-radius: 4px;
   z-index:20;
   font-size: 13px;
+  cursor: default;
 }
 
 a:link { color:#33a; text-decoration: none; }
