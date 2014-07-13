@@ -101,7 +101,7 @@ var ludzie_do_dziedzin_zliczenia = function (ludzie) {
 }
 
 
-d3.json("poland_border.topo.json", function(error_poland, poland_data) {
+d3.json("poland_woj.topo.json", function(error_poland, poland_data) {
   d3.csv("kfnrd_miejsce_dziedzina.csv", function(error_dem, people_data) {
     zacznij_wizualizajce(poland_data, people_data);
   })
@@ -110,10 +110,14 @@ d3.json("poland_border.topo.json", function(error_poland, poland_data) {
 
 function zacznij_wizualizajce (poland_data, people_data) {
 
-  svg.append("path")
-      .datum(topojson.feature(poland_data, poland_data.objects.poland_border))
-      .attr("d", path)
-      .attr("class", "polska");
+  svg.append("g").attr("id", "polska")
+    .selectAll("path")
+      .data(topojson.feature(poland_data, poland_data.objects.poland_woj).features)
+      .enter()
+        .append("path")
+        .attr("id", function(d) { return d.id; })
+          .attr("d", path)
+          .attr("class", "wojewodztwo");
 
   var lata = [];
   for (var rok = 1997; rok < 2014; rok++) lata.push(String(rok)); 

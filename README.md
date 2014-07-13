@@ -21,8 +21,8 @@ Wizualizacje z danych [Krajowego Funduszu na rzecz Dzieci](http://fundusz.org/) 
 
 Kod:
 
-    $ ogr2ogr -f GeoJSON -simplify 0.01 poland_border.json POL_adm0.shp
-    $ topojson -o poland_border.topo.json poland_border.json
+    $ ogr2ogr -f GeoJSON -simplify 0.01 poland_woj.json POL_adm1.shp
+    $ topojson -o poland_woj.topo.json poland_woj.json
 
 ## Znane problemy
 

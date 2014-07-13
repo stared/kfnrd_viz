@@ -1,5 +1,7 @@
-.polska {
+.wojewodztwo {
   fill: #E7B041;
+  stroke: rgba(194, 13, 25, 0.25);
+  stroke-width: 1px;
 }
 
 .city {
