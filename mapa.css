@@ -65,7 +65,7 @@
   border-radius: 4px;
   pointer-events: none;
   opacity: 0.8;
-  /*display: none;*/
+  display: none;
 }
 
 a:link {
