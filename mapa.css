@@ -52,6 +52,20 @@
   cursor: default;
 }
 
+#tooltip {
+  position: absolute;
+  text-align: left;
+  padding: 8px;
+  font: 12px sans-serif;
+  background: #000;
+  color: #ddd;
+  border: solid 1px #aaa;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0.8;
+  /*display: none;*/
+}
+
 a:link {
  color: #4C8C3F;
  text-decoration: none;

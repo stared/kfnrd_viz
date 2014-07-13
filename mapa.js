@@ -13,6 +13,7 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
+var tooltip = d3.select("#tooltip");
 
 var CZAS_PRZEJSCIA = 400;
 
@@ -163,11 +164,20 @@ function odswiez_rok (people_data_rok) {
       .append("title");
 
   miasta
-      .on("mouseover", function (d) { wyswietl_dziedziny_w_miescie(dziedziny, people_data_rok, d); })
-      .on("mouseout", function (d) { wyswietl_dziedziny_wszystkie(dziedziny); });
-      
-  miasta.select("title")
-    .text(function (d) { return [d.osoby, "w", d.miasto_woj].join(" "); });
+    .on("mouseover", function (d) {
+      wyswietl_dziedziny_w_miescie(dziedziny, people_data_rok, d);
+      var pos = projection([d.lng, d.lat]);
+      var r = 3 * Math.sqrt(d.osoby);
+      tooltipShow(
+        [d.osoby, "w", d.miasto_woj].join(" "),
+        pos[0] + 8 - r,
+        pos[1] - 28 - r //+ 8 + r
+      );
+    })
+    .on("mouseout", function (d) {
+      wyswietl_dziedziny_wszystkie(dziedziny);
+      tooltipOut();
+    });
 
   miasta.exit()
     .transition().duration(CZAS_PRZEJSCIA)
@@ -203,8 +213,8 @@ function odswiez_rok (people_data_rok) {
     .attr("text-anchor", "end");
 
   dziedziny
-      .on("mouseover", function (d) { wyswietl_miasta_w_dziedzinie(miasta, people_data_rok, d); })
-      .on("mouseout", function (d) { wyswietl_miasta_wszystkie(miasta); });
+    .on("mouseover", function (d) { wyswietl_miasta_w_dziedzinie(miasta, people_data_rok, d); })
+    .on("mouseout", function (d) { wyswietl_miasta_wszystkie(miasta); });
 
   dziedziny.exit()
     .remove();
@@ -275,4 +285,17 @@ function wyswietl_miasta_w_dziedzinie (miasta, people_data_rok, d) {
       .style("opacity", 1)
       .attr("r", function (d) { return 3 * Math.sqrt(miasta_w_dziedzinie[d.miasto_woj] || 0); });
 
+}
+
+function tooltipShow (html, x, y) {
+  tooltip
+    .style("display", "inline")
+    .style("left", x + "px")
+    .style("top", y + "px")
+    .html(html);
+}
+
+function tooltipOut () {
+  tooltip
+    .style("display", "none");
 }
