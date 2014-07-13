@@ -186,6 +186,13 @@ function odswiez_rok (people_data_rok) {
         return "translate(700," + (170 + 20 * i) + ")";
        });
 
+  dziedziny_g.append("rect")
+    .attr("x", -30)
+    .attr("y", -15)
+    .attr("width", 180)
+    .attr("height", 20)
+    .attr("fill", "white");
+
   dziedziny_g.append("text")
     .attr("class", "dziedzina_tekst")
     .attr("x", 15);
