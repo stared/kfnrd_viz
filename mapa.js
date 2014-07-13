@@ -171,7 +171,7 @@ function odswiez_rok (people_data_rok) {
       tooltipShow(
         [d.osoby, "w", d.miasto_woj].join(" "),
         pos[0] + 8 - r,
-        pos[1] - 28 - r //+ 8 + r
+        pos[1] + 16 + r
       );
     })
     .on("mouseout", function (d) {
