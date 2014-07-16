@@ -5,7 +5,7 @@ Wizualizacje z danych [Krajowego Funduszu na rzecz Dzieci](http://fundusz.org/) 
 * [Mapa uczestników i ich zainteresowań w latach 1997-2013](http://stared.github.io/kfnrd_viz/mapa.html)
 * Inne nadejdą
 
-2014, [Piotr Migdał](http://migdal.wikidot.com/), [open source: MIT](http://en.wikipedia.org/wiki/MIT_License).
+Autor: [Piotr Migdał](http://migdal.wikidot.com/), 2014, [open source: MIT](http://en.wikipedia.org/wiki/MIT_License).
 
 Podziękowania dla Łukasza Partyki za umożliwienie (dane!) i pomoc oraz [Dorki Budacz](http://dorkabudacz.waw.pl/) za uwagi graficzne.
 
