@@ -5,7 +5,9 @@ Wizualizacje z danych [Krajowego Funduszu na rzecz Dzieci](http://fundusz.org/) 
 * [Mapa uczestników i ich zainteresowań w latach 1997-2013](http://stared.github.io/kfnrd_viz/mapa.html)
 * Inne nadejdą
 
-2014, [Piotr Migdał](http://migdal.wikidot.com/).
+Autor: [Piotr Migdał](http://migdal.wikidot.com/), 2014, [open source: MIT](http://en.wikipedia.org/wiki/MIT_License).
+
+Podziękowania dla Łukasza Partyki za umożliwienie (dane!) i pomoc oraz [Dorki Budacz](http://dorkabudacz.waw.pl/) za uwagi graficzne.
 
 ![Mapa uczestników i zainteresowań w latach 1997-2013](screenshot.png)
 
@@ -16,7 +18,7 @@ Wizualizacje z danych [Krajowego Funduszu na rzecz Dzieci](http://fundusz.org/) 
 * Wizualizacja w bibliotece [D3.js](http://d3js.org/) i [Topojson](https://github.com/mbostock/topojson/wiki).
 * Geolokalizacje miast: [Google Geocoding API](https://developers.google.com/maps/documentation/geocoding/).
 * Mapa Polski:
-  * Dane z [Global Administrative Areas (GADM)](http://www.gadm.org/), plik shapefile `POL_adm0.shp` ([POL_adm.zip](http://biogeo.ucdavis.edu/data/gadm2/shp/POL_adm.zip)).
+  * Dane z [Global Administrative Areas (GADM)](http://www.gadm.org/), plik shapefile `POL_adm1.shp` ([POL_adm.zip](http://biogeo.ucdavis.edu/data/gadm2/shp/POL_adm.zip)).
   * Następnie przetworzone na Topojson, zgodnie z instrukcją [Interactive Map with d3.js](http://www.tnoda.com/blog/2013-12-07).
 
 Kod:
