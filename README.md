@@ -3,9 +3,10 @@
 Wizualizacje z danych [Krajowego Funduszu na rzecz Dzieci](http://fundusz.org/) - organizacji pożytku publicznego pomagającej zdolnej młodzieży.
 
 * [Mapa uczestników i ich zainteresowań w latach 1997-2013](http://stared.github.io/kfnrd_viz/mapa.html)
-* Inne nadejdą
+* [KFnrD Serock 2016 - koincydencje warsztatów](http://p.migdal.pl/kfnrd-viz-serock2016/), repo: [stared/kfnrd-viz-serock2016](https://github.com/stared/kfnrd-viz-serock2016)
+* Może inne się pojawią
 
-Autor: [Piotr Migdał](http://migdal.wikidot.com/), 2014, [open source: MIT](http://en.wikipedia.org/wiki/MIT_License).
+Autor: [Piotr Migdał](http://p.migdal.pl), 2014, [open source: MIT](http://en.wikipedia.org/wiki/MIT_License).
 
 Podziękowania dla Łukasza Partyki za umożliwienie (dane!) i pomoc oraz [Dorki Budacz](http://dorkabudacz.waw.pl/) za uwagi graficzne.
 
